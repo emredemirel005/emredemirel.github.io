@@ -19,11 +19,13 @@ main {
     border-right: 1px solid lightgray;
 }
 img {
-    width: 7rem;
-    height: 7rem;
+    width: 50%;
+    height: auto;
 }
 button {
     margin-top: .5rem;
+    padding: .5rem .7rem;
+    font-size: 16px;
 }
 section {
     margin: auto 1em 4em 2em;
@@ -33,8 +35,8 @@ i {
     margin-right: .5em;
 }
 
-p {
-    margin: .2em auto
+p, li {
+    margin: .5em auto
 }
 
 hr {
@@ -51,4 +53,35 @@ h1, h2, h3, h4 {
 a {
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+
+main { 
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-top: 3em;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
+
+p, li {
+    margin: .4em auto;
+    font-size: 14px;
+}
+
+button {
+    margin-top: .6rem;
+    padding: .2rem .4rem;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
 }
